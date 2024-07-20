@@ -24,7 +24,7 @@ def add_pokemon(request):
         if form.is_valid():
             form.save()
             return redirect('pokedex:index')
-        else:
-            form = PokemonForm()
+    else:
+        form = PokemonForm()
 
-        return render(request, 'add_pokemon.html', {'form':form})
+    return render(request, 'add_pokemon.html', {'form':form})
