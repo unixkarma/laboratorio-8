@@ -28,4 +28,27 @@
 		</div>
 		{% endfor %}
 		</div>
+ <div class = "card-group">                                                      
+                        {% for trainer in trainers%}                                            
+                                <div class='card'>                                              
+                                        <img src="{{ trainer.picture.url }}" alt = "" style="max-width: 200px; height: auto;">                                                                  
+                                        <div class = "card-body">                               
+                                                <h5 class='card-title'>{{ trainer }}</h5>       
+                                                <p class="card-text">Edad:{{ pokemon.age }}</p>                                                                                       
+                                                <p class= "card-text">Altura:{{ pokemon.height }}</p>                                                                                             
+                                                <a href = "pokemon/{{trainer.id}}" class="btn btn-primary">                                                                                     
+<i class="fa-solid fa-eye"></i>                                                                 
+                                                </a>                                            
+                                                <a href = "edit_trainer/{{trainer.id}}" class="btn btn-secondary">                                                                              
+                <i class="fa-solid fa-pencil"></i>                                              
+                                                </a>                                            
+                                                <a href = "edit_trainer/{{trainer.id}}" class="btn btn-danger">                                                                                 
+                <i class="fa-solid fa-trash"></i>                                               
+                                                </a>                                            
+                                                                                                
+                                                                                                
+                                </div>                                                          
+                </div>                                                                          
+                {% endfor %}                                                                    
+                </div>     
 		{% endblock content %}

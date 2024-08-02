@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title%}Pokedex{% endblock title %}
+
+{% block content  %}
+            
+	<p>El entrenador es: <strong>{{ trainer | capfirst }}</strong></p>
+            <h3>Datos del Entrenador:</h3>
+            <ul>
+            <li>Edad: {{pokemon.age}}</li>
+            <li>Altura: {{pokemon.height}} Kg.</li>
+            <li>Ciudad de Nacimiento: {{pokemon.city}} Cm.</li>
+            </ul>
+                    <a href ="/">Regresar<a>
+        </div>
+    </body>
+</html>
+
+{% endblock content %}
+
