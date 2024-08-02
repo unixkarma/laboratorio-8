@@ -19,7 +19,7 @@
 						<a href = "edit_pokemon/{{pokemon.id}}" class="btn btn-secondary">
 		<i class="fa-solid fa-pencil"></i>
                                                 </a>
-						<a href = "edit_pokemon/{{pokemon.id}}" class="btn btn-danger">
+						<a href = "delete_pokemon/{{pokemon.id}}" class="btn btn-danger">
                 <i class="fa-solid fa-trash"></i>
                                                 </a>
 
@@ -34,15 +34,15 @@
                                         <img src="{{ trainer.picture.url }}" alt = "" style="max-width: 200px; height: auto;">                                                                  
                                         <div class = "card-body">                               
                                                 <h5 class='card-title'>{{ trainer }}</h5>       
-                                                <p class="card-text">Edad:{{ pokemon.age }}</p>                                                                                       
-                                                <p class= "card-text">Altura:{{ pokemon.height }}</p>                                                                                             
+                                                <p class="card-text">Edad:{{ pokemon.birth_date }}</p>                                                                                       
+                                                <p class= "card-text">Nivel:{{ pokemon.level }}</p>                                                                                             
                                                 <a href = "pokemon/{{trainer.id}}" class="btn btn-primary">                                                                                     
 <i class="fa-solid fa-eye"></i>                                                                 
                                                 </a>                                            
                                                 <a href = "edit_trainer/{{trainer.id}}" class="btn btn-secondary">                                                                              
                 <i class="fa-solid fa-pencil"></i>                                              
                                                 </a>                                            
-                                                <a href = "edit_trainer/{{trainer.id}}" class="btn btn-danger">                                                                                 
+							<a href = "delete_trainer/{{trainer.id}}" class="btn btn-danger">                                                                                 
                 <i class="fa-solid fa-trash"></i>                                               
                                                 </a>                                            
                                                                                                 
